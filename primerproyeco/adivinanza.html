@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primer pagina en clip</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="/primerproyeco/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/primerproyeco/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Adivinanza <span class="sr-only"></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/primerproyeco/index.html">Inicio <span class="sr-only"></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Googleamos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item"
+                                href="https://www.google.com/search?q=programa+clip&source=lmns&bih=657&biw=1366&hl=es-419&sa=X&ved=2ahUKEwiEzqL4q7zrAhVhAtQKHQ3qC9EQ_AUoAHoECAEQAA">Clip
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item"
+                                href="https://www.google.com/search?bih=657&biw=1366&hl=es-419&sxsrf=ALeKk03LiDm0iMGe0Q3Xv5diFXZyvoHQmw%3A1598564763646&ei=mylIX7yNJ7DA5OUPoeWO2AQ&q=programador+junior+que+es&oq=programador+junior+que+es&gs_lcp=CgZwc3ktYWIQAzICCAAyBggAEBYQHjIGCAAQFhAeMggIABAWEAoQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoHCAAQsAMQQzoECAAQQzoHCAAQFBCHAlDjE1jCGWD6GmgBcAB4AIABbIgBjAWSAQM1LjKYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=psy-ab&ved=0ahUKEwj8xoznrbzrAhUwILkGHaGyA0sQ4dUDCA0&uact=5">Programador Full Stack</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <br>
+        <br>
+        <h3>Responder la siguiente adivinanza:</h3>
+        <br>
+        <br>
+        <h5>¿Cuantas nuevas oportunidades se va a crear gracias al Clip?</h5>
+        <div id="pistasDar">
+            
+        </div>
+        <br>
+        <input type="number" id="respuestaObtenida">
+        <div class="d-flex flex-row-reverse bd-highlight">
+                    <div class="p-2 bd-highlight">Intentos restantes</div>
+                    <div class="p-2 bd-highlight" id="intentosMostrar"> <h1>4</h1></div>
+        
+                </div>
+
+        <button type="button" class="btn btn-primary" onclick="contadorDeIntentos()" id="botonIntento" >Enviar</button>
+    </div>    
+
+</body>
+</html>
