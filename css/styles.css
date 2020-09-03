@@ -1,5 +1,25 @@
+.navbarP{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
 .imagenPrincipal {
     background: black;
     height: 100%;
     position: fixed;
 }
+
+.ayudas {
+    border: rgb(163, 218, 231) solid 2px;
+}
+
+.inputResp {
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+@media (max-width: @screen-xs-max) { ... }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg-min) { ... }

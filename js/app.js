@@ -7,7 +7,7 @@ function contadorRestantes(){
     var html = "";
     intentosRestantes--;
     console.log(intentosRestantes)
-    html+=`<h1>${intentosRestantes}</h1>`;
+    html+=`<h3>${intentosRestantes}</h3>`;
     document.getElementById("intentosMostrar").innerHTML = html;
 
     
@@ -17,32 +17,38 @@ function contadorDeIntentos(){
     contadorR++;
     respuesta = parseInt(document.getElementById("respuestaObtenida").value) ;
     if(respuesta === this.respuestaCorrecta){
-        alert("¡Felicidades ganaste!");
+        var html ="";
         document.getElementById("botonIntento").disabled="true";
+        document.getElementById("respuestaObtenida").disabled="true";
+        html+=`<h5>¡Felicitaciones!</h5> <h5> Ganaste la adivinanza<h5>`;
+        document.getElementById("pistasDar").innerHTML = html;
+
+
     }
     else{
-    this.darPistas(this.contadorR);
+    this.darPistas();
     }
 };
 
 function darPistas(){
     var html ="";
-    console.log("estamos en darpistass")
     if(this.contadorR === 1) {
-        html+=`<h5>Tenes mas intentos</h5>`;
+        html+=`<h5>Te quedan 3 intentos</h5>`;
         document.getElementById("pistasDar").innerHTML = html;
     }
     else if(this.contadorR === 2) {
-        html+=`<h5>Primer pista  </h5><h5>La respuesta es de 4 cifras</h5>`;
+        html+=`<h5>Ayuda:</h5> <h5>Primer pista  </h5><h5>La respuesta es de 4 cifras</h5>`;
         document.getElementById("pistasDar").innerHTML = html;
     }
     else if(this.contadorR === 3 ) {
-        html+=`<h5>Segunda pista  </h5><h5>La respuesta empieza con el numero 1</h5>`;
+        html+=`<h5>Ayuda:</h5> <h5>Segunda pista  </h5><h5>La respuesta empieza con el numero 1</h5>`;
         document.getElementById("pistasDar").innerHTML = html;
     }
     else if(this.contadorR <= 4) {
-        alert("Perdiste, podes volver al Inicio y leer la informacion de nuevo")
         document.getElementById("botonIntento").disabled="true";
+        document.getElementById("respuestaObtenida").disabled="true";
+        html+=`<h5> Perdiste, podes leer la informacion de nuevo haciendo click <a href="/index.html#queesclip">aqui</a> </h5>`;
+        document.getElementById("pistasDar").innerHTML = html;
     };
 
 };
