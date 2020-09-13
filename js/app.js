@@ -50,7 +50,6 @@ function darPistas(){
         html+=`<h5> Perdiste, podes leer la informacion de nuevo haciendo click <a href="index.html#queesclip">aqui</a> </h5>`;
         document.getElementById("pistasDar").innerHTML = html;
     };
-
 };
 
 function ocultarColapse () {
