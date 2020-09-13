@@ -53,3 +53,6 @@ function darPistas(){
 
 };
 
+function ocultarColapse () {
+    $('#navbarTogglerDemo03').collapse('hide')
+};
