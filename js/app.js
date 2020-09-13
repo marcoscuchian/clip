@@ -47,7 +47,7 @@ function darPistas(){
     else if(this.contadorR <= 4) {
         document.getElementById("botonIntento").disabled="true";
         document.getElementById("respuestaObtenida").disabled="true";
-        html+=`<h5> Perdiste, podes leer la informacion de nuevo haciendo click <a href="index.html#queesclip">aqui</a> </h5>`;
+        html+=`<h5> Perdiste, podes leer la informacion de nuevo haciendo click <a href="index.html#queesclip">aqui</a> </h5>``<h5> Perdiste, podes leer la informacion de nuevo haciendo click <a href="index.html">aqui</a> </h5>`;
         document.getElementById("pistasDar").innerHTML = html;
     };
 
