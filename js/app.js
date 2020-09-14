@@ -55,3 +55,9 @@ function darPistas(){
 function ocultarColapse () {
     $('#navbarTogglerDemo03').collapse('hide')
 };
+
+
+
+$(document).ready(function(){
+    $('body').scrollspy({target: ".navbarP", offset: 50});   
+});
